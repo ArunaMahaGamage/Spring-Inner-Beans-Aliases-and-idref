@@ -5,7 +5,9 @@
 
     <bean id="triangle" class="Triangle">
 
-        <property name="pointA" ref="point1"/>
+        <property name="pointA" >
+            <ref bean ="point1"/>
+        </property>
 
         <!--Inner Bean-->
         <property name="pointB">
